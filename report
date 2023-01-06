@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="76.838" timestamp="2023-01-06T03:52:32.789708" hostname="DESKTOP-J53FC7N"><testcase classname="grammarly_test" name="test_grammarly_installed_and_active" time="5.502"><failure message="AssertionError: assert 'enabled' == 'enable'&#10;  - enable&#10;  + enabled&#10;  ?       +">def test_grammarly_installed_and_active():
+        driver = get_driver()
+        before_all(driver)
+        #verify we are on the extensions page
+        menu_bars = driver.execute_script(selector_strings.menu_bars)
+        #print(menu_bars.is_displayed())
+        extension_list_container = driver.execute_script(selector_strings.extension_list_container)
+        #print(extension_list_container.is_displayed())
+        #verify the grammarly card is there
+        grammarly_card = driver.execute_script(selector_strings.grammarly_card)
+        #print(grammarly_card.is_displayed())
+        #verify the grammarly extension is enabled (the user has selected it to be on)
+        grammarly_card_check = driver.execute_script(selector_strings.grammarly_card_check)
+&gt;       assert grammarly_card_check.get_attribute('class') == 'enable'
+E       AssertionError: assert 'enabled' == 'enable'
+E         - enable
+E         + enabled
+E         ?       +
+
+grammarly_test.py:51: AssertionError</failure></testcase><testcase classname="grammarly_test" name="test_grammarly_correct_suggestion" time="35.517" /><testcase classname="grammarly_test" name="test_grammarly_incorrect_suggestion" time="35.621" /></testsuite></testsuites>
