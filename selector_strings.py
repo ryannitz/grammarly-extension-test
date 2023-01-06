@@ -9,5 +9,4 @@ grammarly_highlight = """return document.querySelector('#form > div > grammarly-
 grammarly_suggested_correction = """return document.querySelector('grammarly-mirror').shadowRoot.querySelector('[data-grammarly-part="replacement-card-item"]')"""
 
 #wordcounter page selectors
-wc_clear_btn = "clear-btn"
 wc_text_area = "box"
