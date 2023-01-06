@@ -1,5 +1,7 @@
 # Python grammarly extension UI test script
 
+See previous failed attempt with wdio and my aspirations to use POM (details below): https://github.com/ryannitz/pagefreezer-failed-attempt/tree/main/test/pageobjects
+
 ## Setup
 
 ### 1. Clone or download the repository
