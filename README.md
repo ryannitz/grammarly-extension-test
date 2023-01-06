@@ -79,7 +79,7 @@ The above command will generate a standard junit xml report. Here is an example 
 </testsuites>
 ```
 
-## Expected report:
+## Expected terminal output:
 
 ```
 $ pytest -v
@@ -101,7 +101,7 @@ PASSED                         [100%]
 =============================== 3 passed in 82.12s (0:01:22) ===============================
 ```
 
-Example of failed test:
+Example of failed test in terminal output:
 
 ```
 $ pytest --junitxml="report"
