@@ -36,6 +36,9 @@ In the root of the repo, run pytest:
 pytest -v
 ```
 
+Note: Shadow dom and actions.perform() make the test flaky when user interacts with the chrome page during certain steps.
+Do not interact with the chrome browser while the test is executing. Extensions prevent headless execution. Ideally this would run via jenkins for nightlies and such.
+
 ## Generated test case report:
 
 ```
